@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.attention.profileActivity.ProfileActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/settingsImage"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_image" />
+
+        <RelativeLayout
+            android:id="@+id/rellay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/blueSpace"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="205dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginStart="50dp"
+                android:background="@drawable/curved_button_rad"
+                tools:layout_editor_absoluteX="71dp"
+                tools:layout_editor_absoluteY="241dp" />
+
+            <TextView
+                android:id="@+id/settingsDiplayName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/textViewUSN"
+                android:layout_centerHorizontal="true"
+                android:text="@string/name"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/textViewUSN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/blueSpace"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="6dp"
+                android:text="@string/college_id_number"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="normal"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textViewBranch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeLayout"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:drawableLeft="@drawable/ic_settings_blue"
+        android:drawablePadding="20dp"
+        android:drawableStart="@drawable/ic_settings_blue"
+        android:text="@string/branch"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="183dp"
+        tools:layout_editor_absoluteY="342dp" />
+
+    <TextView
+        android:id="@+id/textViewPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_below="@id/textViewBranch"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:drawablePadding="20dp"
+        android:drawableLeft="@drawable/ic_phone_blue"
+        android:layout_marginTop="10dp"
+        android:text="@string/phone"
+        android:textSize="16sp"
+        android:drawableStart="@drawable/ic_phone_blue" />
+
+    <TextView
+        android:id="@+id/textViewEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewPhone"
+        android:drawablePadding="20dp"
+        android:drawableLeft="@drawable/ic_mail_blue"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/email"
+        android:textSize="16sp"
+        android:drawableStart="@drawable/ic_mail_blue" />
+
+    <TextView
+        android:id="@+id/textViewCollege"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewEmail"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/ic_college_blue"
+        android:drawablePadding="20dp"
+        android:drawableStart="@drawable/ic_college_blue"
+        android:text="@string/college"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="182dp"
+        tools:layout_editor_absoluteY="452dp" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButtonSettingsImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_camera_white"
+        app:fabSize="normal"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        tools:targetApi="lollipop" />
+
+
+</RelativeLayout>

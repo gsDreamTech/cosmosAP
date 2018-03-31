@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:title="@string/notification"
+            android:id="@+id/notification_id"
+            android:icon="@drawable/ic_notifications"/>
+
+        <item
+            android:title="@string/news_feed"
+            android:id="@+id/newsfeed_id"
+            android:icon="@drawable/ic_newsfeed"/>
+
+        <item
+            android:title="@string/time_table"
+            android:id="@+id/timetable_id"
+            android:icon="@drawable/ic_timetable"/>
+
+        <item
+            android:title="@string/results"
+            android:id="@+id/results_id"
+            android:icon="@drawable/ic_results"/>
+
+        <item
+            android:title="@string/seat_allotment"
+            android:id="@+id/seatallotment_id"
+            android:icon="@drawable/ic_seatallotment"/>
+
+        <item
+            android:title="@string/settings"
+            android:id="@+id/settings_id"
+            android:icon="@drawable/ic_settings"/>
+    </group>
+
+
+
+</menu>

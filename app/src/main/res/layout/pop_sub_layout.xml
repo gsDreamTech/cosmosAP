@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/allotseatimg"
+        android:layout_width="match_parent"
+        android:layout_height="215dp"
+        android:src="@drawable/seat_allotment_karnataka" />
+
+    <ImageView
+        android:id="@+id/bluecoloralpha"
+        android:layout_width="match_parent"
+        android:layout_height="215dp"
+        android:alpha="0.80"
+        android:src="@color/colorPrimary" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="84dp"
+        android:fontFamily="@font/graduate"
+        android:text="@string/seat"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:targetApi="jelly_bean" />
+
+    <TextView
+        android:id="@+id/SubjectText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/subject"
+        android:textColor="@color/colorPrimary"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bluecoloralpha" />
+
+    <TextView
+        android:id="@+id/BlockText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/blockb"
+        android:textColor="@color/colorPrimary"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="@+id/SubjectText"
+        app:layout_constraintTop_toBottomOf="@+id/SubjectText" />
+
+    <TextView
+        android:id="@+id/RoomText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/rooom"
+        android:textColor="@color/colorPrimary"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="@+id/BlockText"
+        app:layout_constraintTop_toBottomOf="@+id/BlockText" />
+
+    <TextView
+        android:id="@+id/SeatText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/seatno"
+        android:textColor="@color/colorPrimary"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="@+id/RoomText"
+        app:layout_constraintTop_toBottomOf="@+id/RoomText" />
+
+    <TextView
+        android:id="@+id/TimeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/timetime"
+        android:textColor="@color/colorPrimary"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="@+id/SeatText"
+        app:layout_constraintTop_toBottomOf="@+id/SeatText" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="84dp"
+        android:fontFamily="@font/graduate"
+        android:text="@string/seat"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:targetApi="jelly_bean" />
+
+    <TextView
+        android:id="@+id/tvsubject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center_horizontal"
+        android:text="@string/sub"
+        android:textColor="@color/graylight"
+        android:textSize="28sp"
+        app:layout_constraintStart_toEndOf="@+id/SubjectText"
+        app:layout_constraintTop_toBottomOf="@id/bluecoloralpha"
+        android:layout_marginLeft="48dp" />
+
+    <TextView
+        android:id="@+id/tvblock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/block"
+        android:textColor="@color/graylight"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="@+id/tvsubject"
+        app:layout_constraintTop_toBottomOf="@+id/tvsubject" />
+
+    <TextView
+        android:id="@+id/tvroom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/room"
+        android:textColor="@color/graylight"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="@+id/tvblock"
+        app:layout_constraintTop_toBottomOf="@+id/tvblock" />
+
+    <TextView
+        android:id="@+id/tvseat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/seatseat"
+        android:textColor="@color/graylight"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="@+id/tvroom"
+        app:layout_constraintTop_toBottomOf="@+id/tvroom" />
+
+    <TextView
+        android:id="@+id/tvtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/time"
+        android:textColor="@color/graylight"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="@+id/tvseat"
+        app:layout_constraintTop_toBottomOf="@+id/tvseat" />
+
+
+    <ImageView
+        android:id="@+id/line_blue"
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="20dp"
+        android:scaleX="1.3"
+        android:src="@drawable/lineblue"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TimeText" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:background="@color/trans"
+        android:text="@string/next_subject"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TimeText" />
+
+</android.support.constraint.ConstraintLayout>
